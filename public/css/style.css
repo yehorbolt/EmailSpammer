@@ -1,0 +1,134 @@
+/*
+ Styles for site
+*/
+
+body {
+    background: linear-gradient(45deg, #91d8ff, #e9ebec) no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+.navbar {
+    background: linear-gradient(45deg, #1174ad, #e9ebec) no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+
+.navbar span {
+    color: #002047;
+    font-size: 22px;
+}
+
+.p_site {
+    font-size: 20px;
+}
+
+.btn-view {
+    background: #002047;
+    color: #ffffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+.btn-view:hover {
+    color: #ffffff;
+    background: #15062d;
+}
+
+.btn-submit {
+    background: #3609ec;
+    color: #ffffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+.btn-submit:hover {
+    color: #ffffff;
+    background: #2d5624;
+}
+
+.btn-send-all {
+    background: #940734;
+    color: #ffffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+.btn-send-all:hover {
+    color: #ffffff;
+    background: #6b0729;
+}
+
+.btn-send {
+    background: #af4a6c;
+    color: #ffffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+.btn-send:hover {
+    color: #ffffff;
+    background: #831c40;
+}
+
+.btn-update {
+    background: #798137;
+    color: #ffffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+.btn-update:hover {
+    color: #ffffff;
+    background: #345e0e;
+}
+
+.btn-delete {
+    background: #ff0000;
+    color: #ffffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+.btn-delete:hover {
+    color: #ffffff;
+    background: #9f0000;
+}
+
+.btn-create {
+    background: #3a498c;
+    color: #ffffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+.btn-create:hover {
+    color: #ffffff;
+    background: #1c1d69;
+}
+
+table {
+    background :linear-gradient(45deg, #c1bbd7, #c6c7da) no-repeat center center fixed;
+
+}
+
+td {
+    background: #838fb6;
+    border-bottom: 1px solid #01093f;
+    color: #000000;
+    border-top: 1px solid transparent;
+    padding: 8px;
+}
+
+tr:hover td {
+    background :linear-gradient(45deg, #7f7ab0, #c2b8d5) no-repeat center center fixed;
+}

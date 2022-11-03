@@ -1,0 +1,95 @@
+<h3>Update User</h3>
+
+<form action="/user/{{spamers._id}}" id="checkForm" method="POST" onsubmit="upload()" autocomplete="off">
+
+
+    <div class="form-group py-md-1 mb-1 h5">
+        <label> Last Name </label>
+        <input type="text" class="form-control" name="lastName" value="{{spamers.lastName}}"
+               placeholder="Last Name">
+
+    </div>
+
+    <div class="form-group py-md-1 mb-1 h5">
+        <label> Name </label>
+        <input type="text" class="form-control" name="name" value="{{spamers.name}}"
+               placeholder="Name">
+
+    </div>
+
+    <div class="form-group py-md-1 mb-1 h5">
+        <label> Patronymic </label>
+        <input type="text" class="form-control" name="patronymic" value="{{spamers.patronymic}}"
+               placeholder="Patronymic">
+
+    </div>
+
+    <div class="form-group py-md-1 mb-1 h5">
+        <label> Email </label>
+        <input type="text" class="form-control" name="email" value="{{spamers.email}}"
+               placeholder="Email">
+
+    </div>
+
+    <div class="form-group py-md-1 mb-1 h5">
+        <label> Message </label>
+        <select class="form-select" id="inlineMessageSelect" name="message">
+            <option selected>
+                No message, sorry
+            </option>
+            <option value="No message, sorry">
+                Hi
+            </option>
+            <option value="https://shortest.link/7p3H">
+                https://shortest.link/7p3H
+            </option>
+            <option value="Your account was... just pay 5$ for knowing what you receive">
+                Your account was... just pay 5$ for knowing what you receive
+            </option>
+        </select>
+
+    </div>
+
+    <div class="form-group py-md-1 mb-1 h6">
+
+        <input type="checkbox" class="custom-control-input" id="customCheckbox" onclick="changeCheckbox()">
+        <label class="custom-control-label" name="checkbox">
+            I want to use custom message
+        </label>
+    </div>
+
+    <div class="form-group py-md-1 mb-2 h5">
+        <label> Message </label>
+        <input type="text" class="form-control" id="messageTextArea" name="message" value="{{spamers.message}}"
+               placeholder="Message" disabled>
+
+    </div>
+
+    <div class="form-group py-md-2 mb-2" >
+        <button type="submit" class="btn btn-submit h5">
+            Submit
+        </button>
+        <a href="/users" class="btn btn-view mx-2 h5">
+            View All
+        </a>
+    </div>
+
+</form>
+
+<script>
+
+
+    function changeCheckbox() {
+        const st = document.getElementById("customCheckbox").checked;
+        if(st){
+            document.getElementById("messageTextArea").disabled= false
+            document.getElementById("inlineMessageSelect").disabled= true
+        }else{
+            document.getElementById("messageTextArea").disabled= true
+            document.getElementById("inlineMessageSelect").disabled= false
+        }
+    }
+
+
+</script>
+
